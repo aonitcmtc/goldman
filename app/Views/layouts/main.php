@@ -1,3 +1,3 @@
-<?= view('layouts/header', ['title' => $title ?? 'Goldman']) ?>
+<?= view('layouts/header', ['title' => $title ?? 'Goldcat']) ?>
 <?= $this->renderSection('content') ?>
 <?= view('layouts/footer') ?>

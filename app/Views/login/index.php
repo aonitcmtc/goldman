@@ -14,6 +14,10 @@
         border-radius: 0.5rem;
         box-shadow: 5px 5px #7d7d7d; 
     }
+
+    .btn-gc-login {
+        display: none;
+    }
 </style>
 
 <div class="container gm-main-content">

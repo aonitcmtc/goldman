@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?= esc($title ?? 'Goldman') ?></title>
+    <title><?= esc($title ?? 'Goldcat') ?></title>
     <meta charset="UTF-8">
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +24,12 @@
 <body>
 
 <style>
+    @font-face {
+        font-family: 'Fascinate';
+        /* src: url('/font/Fascinate-Regular.ttf') format('truetype'); */
+        src: url('/font/DynaPuff-Regular.ttf') format('truetype');
+    }
+    
     body{
         /* background-color: #ababab; */
         background-color: #f1d16b;

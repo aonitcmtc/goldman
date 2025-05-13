@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?= esc($title ?? 'Goldman') ?></title>
+    <title><?= esc($title ?? 'Goldcat') ?></title>
     <meta charset="UTF-8">
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +13,36 @@
 <body>
 
 <style>
+    @font-face {
+        font-family: 'Kanit';
+        src: url('/font/Kanit-Regular.ttf') format('truetype');
+    }
+
     body{
         background-color: #ababab;
+
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .gm-main-content {
         height: 100vh;
+    }
+
+    .shadow-gc-img {
+        color: #3d3d3d;
+        border-color: #3d3d3d;
+        box-shadow: 2px 2px #3d3d3d;
     }
 </style>
 <header>
 
     <nav class="navbar gm-nav-header navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand border border-secondary rounded-circle p-2 shadow-gc-img" href="#">
+                <img src="/why.ico" height="32px" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
