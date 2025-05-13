@@ -1,6 +1,6 @@
 <style>
     .d-footer {
-            background-color: red;
+            background-color: #f58e0d;
     }
 </style>
 <footer>
