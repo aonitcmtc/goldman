@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\MemberModel;
 
-class Member extends BaseController
+class Dashboard extends BaseController
 {
     
 
