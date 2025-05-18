@@ -24,13 +24,16 @@ class Login extends BaseController
         // echo "user['password'] :: ".$user['password'];
         // print_r($user['status']); die();
 
+        // $hash_pass = password_hash("123456", PASSWORD_DEFAULT);
+        // print_r($hash_pass); die();
+
         $user = $model->getUserByUsername($username);
 
         // check statis and group & hash password tt/
         if ($user && $user['status'] && password_verify($password, $user['hash_password'])) {
             
             $is_group = $user['member_group'];
-            // print_r($user); die();
+            // print_r($out_site); die();
 
             if ($out_site == 'lfdrive') {
                 if ($is_group == 'lfdrive') {
@@ -43,7 +46,8 @@ class Login extends BaseController
                     // return redirect()->to('/dashboard');
                     return redirect()->to('/lfdrive/page');
                 } else {
-                    return redirect()->to('/lfdrive');
+                    // return redirect()->to('/lfdrive');
+                    return redirect()->back()->with('error', 'Invalid username or password');
                 }
                 
             } else if ($is_group == 'admin') {
