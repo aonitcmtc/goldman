@@ -42,7 +42,7 @@
         width: 80%;
         min-height: 100vh;
         /* background-color: #f1f1f1; */
-        height: 300px; /* only for demonstration, should be removed */
+        /* height: 300px; only for demonstration, should be removed */
     }
 
     /* Clear floats after the columns */

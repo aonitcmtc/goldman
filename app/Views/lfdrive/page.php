@@ -6,7 +6,7 @@
 </style>
 
 
-<div class="container content-admin">
+<div class="container content-tabbar">
     <div class="row">
         <div class="col-12 text-center my-5">
             <h2>Page Drive</h2>

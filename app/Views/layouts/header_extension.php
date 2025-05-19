@@ -36,13 +36,13 @@
     .sidebar a { color: white; display: block; margin-bottom: 10px; text-decoration: none; }
     .content { flex-grow: 1; padding: 20px;} */
 
-    .content-admin {
+    .content-tabbar {
         float: left;
         padding: 20px;
         width: 80%;
         min-height: 100vh;
         /* background-color: #f1f1f1; */
-        height: 300px; /* only for demonstration, should be removed */
+        /* min-height: 300px; only for demonstration, should be removed */
     }
 
     /* Clear floats after the columns */
@@ -67,7 +67,7 @@
     }
 
     .gm-main-content {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .shadow-gc-img {
@@ -80,8 +80,42 @@
         background-color: #6c757d !important;
     }
 
+    @media (max-width: 992px) {
+  
+        .left-menu {
+            display: none;
+            /* float: left;
+            width: 20%;
+            min-height: 100vh;
+            background-color: #afb1a5;
+            padding: 20px; */
+        }
+
+        .content-tabbar {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            min-height: 100vh;
+            /* background-color: #f1f1f1; */
+            min-height: 100vh;
+        }
+
+        .d-footer {
+            display: inline-block;
+            width: -webkit-fill-available;
+        }
+
+    }
+
+
 </style>
 <header>
+
+<!-- php setup -->
+<?php
+    // $page = isset($_GET['page']) ? $_GET['page'] : 'news.php';
+    $admin_path = $_SERVER['REQUEST_URI'];
+?>
 
     <div class="row d-gc-nav" class="">
         <nav class="navbar gm-nav-header navbar-expand-lg navbar-light bg-light">
@@ -94,24 +128,24 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link active" aria-current="page" href="/lfdrive/page">Home</a>
                     </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li> -->
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        Upload
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="/lfdrive/upload/uploadimg">Upload Image</a></li>
+                        <li><a class="dropdown-item" href="/lfdrive/upload/showimg">Show Image</a></li>
+                        <!-- <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li> -->
                 </ul>

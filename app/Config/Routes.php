@@ -21,6 +21,7 @@ $routes->get('/lfdrive', 'Lfdrive::index');
 $routes->get('/lfdrive/page', 'Lfdrive::page');
 $routes->get('/lfdrive/upload/uploadimg', 'Lfdrive::uploadimg');
 $routes->get('/lfdrive/upload/showimg', 'Lfdrive::showimg');
+$routes->post('/lfdrive/uploadimgtobucket', 'Lfdrive::uploadimgtobucket');
 
 
 $routes->get('/adminpage', 'Adminpage::index');
