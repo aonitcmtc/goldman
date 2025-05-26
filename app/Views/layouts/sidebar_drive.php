@@ -1,10 +1,17 @@
 <style>
 
-.list-group-item-secondary.list-group-item-action.active
+.list-group-item-secondary.list-group-item-action
 {
     color: #fff;
     background-color: #828486;
     border-color: #828486;
+}
+
+.list-group-item-secondary.list-group-item-action.active
+{
+    color: #000;
+    background-color: #e2e3e5;
+    border-color: #e2e3e5;
 }
 
 .list-group-child {
@@ -14,9 +21,9 @@
 }
 
 .list-group-child.active {
-    color: #fff;
-    background-color: #9f9699;
-    border-color: #9f9699;
+    color: #c3a439;
+    background-color: #cec4b1;
+    border-color: #cec4b1;
 }
 
 

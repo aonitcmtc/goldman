@@ -12,6 +12,10 @@ $routes->get('/v1/(:any)', 'Apiv1::service/$1');
 $routes->get('/login', 'Login::index');
 $routes->post('/login/auth', 'Login::auth');
 $routes->get('/logout', 'Login::logout');
+
+$routes->get('/lfdrive/login', 'Loginlfdrive::index');
+$routes->post('/lfdrive/login/auth', 'Loginlfdrive::auth');
+$routes->get('/lfdrive/logout', 'Loginlfdrive::logout');
 // $routes->get('dashboard', function() {
 //     if (!session()->get('isLoggedIn')) return redirect()->to('/home/index');
 //     echo "Welcome, " . session()->get('username');

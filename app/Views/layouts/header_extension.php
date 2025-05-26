@@ -154,9 +154,9 @@
                     <button class="btn btn-outline-dark mx-2" type="submit">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button> -->
-                    <a href="<?= base_url('lfdrive') ?>" type="button" class="btn btn-outline-light mx-2">Logout</a>
+                    <a href="<?= base_url('lfdrive/login') ?>" type="button" class="btn btn-outline-light mx-2">Logout</a>
                 </form>
-                <!-- <form class="text-end" action="<?= base_url('lfdrive') ?>" method="get">
+                <!-- <form class="text-end" action="<?= base_url('lfdrive/login') ?>" method="get">
                     <button type="submit" class="btn btn-outline-danger mx-2">Logout</button>
                 </form> -->
                 </div>
